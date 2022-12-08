@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/draft.css">
+		<title>lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container"></div>
+			</header>
+			<main class="page">
+				<div class="page__exemple">
+					<form class="form" action="#" method="get" enctype="multipart/form-data" >
+						<div class="form__line">
+							<label for="name" class="form__label">Введите ваше имя*</label>
+							<input id="name" class="form__input" type="text" name="name"  placeholder="Введите ваше имя" autocomplete="off" required >
+						</div>
+						<div class="form__line">
+							<label for="age" class="form__label">Введите ваш возраст*</label>
+							<input id="age" class="form__input" type="text" name="age" value="18" placeholder="Введите ваш возраст" autocomplete="off" required >
+						</div>
+						<div class="form__line">
+							<label for="email" class="form__label">Введите ваш email</label>
+							<input id="email" class="form__input" type="email" name="email" placeholder="Введите ваш email" autocomplete="off" >
+						</div>
+						<div class="form__line">
+							<label for="tell" class="form__label">Введите ваш телефон</label>
+							<input id="tell" class="form__input" type="text" name="tell" placeholder="Введите ваш телефон" autocomplete="off" >							
+						</div>
+						<div class="form__line">
+							<label for="pass" class="form__label">Введите ваш пароль*</label>
+							<input id="pass" class="form__input" type="password" name="pass" placeholder="Введите ваш пароль" autocomplete="off" >							
+						</div>
+						<div class="form__line">
+							<label for="num" class="form__label">Введите ваше число</label>
+							<input id="num" class="form__input" type="number" name="num" placeholder="Введите ваш число" autocomplete="off" >							
+						</div>
+						<div class="form__line">
+							<label for="col" class="form__label">Любимый цвет</label>
+							<input id="col" class="form__input" type="color" name="col" autocomplete="off" >							
+						</div>
+						<div class="form__line">
+							<label for="search" class="form__label">Ваш вопрос</label>
+							<input id="search" class="form__input" type="search" name="search" placeholder="Ваш вопрос" autocomplete="off" >							
+						</div>
+						<div class="form__line">
+							<label for="date" class="form__label">Дата рождения</label>
+							<input id="date" class="form__input" type="date" name="date" autocomplete="off" >							
+						</div>
+						<div class="form__title"><span>* Поле для обязательного заполнения</span></div>
+						<div class="form__line">														
+							<input id="car-01" class="form__input form__input--chk" type="checkbox" name="car">
+							<label for="car-01" class="form__label form__label--chk">Наличие авто</label>
+						</div>
+
+						<div class="form__line">
+							<div class="form__checkbox checkbox">
+								<input id="car-02" class="checkbox__input" type="checkbox" name="car">
+								<label for="car-02" class="checkbox__label"><span class="checkbox__text">Наличие авто</span></label>
+							</div>
+						</div>
+						<div class="form__line">	
+							<div class="form__title"><h1>Любимая пора года</h1></div>	
+							<div class="form__radio">
+								<input id="winter" class="form__input form__input--radio" type="radio" name="like">
+								<label for="winter" class="form__label form__label--radio">Зима</label>
+							</div>
+							<div class="form__radio">
+								<input id="spring" class="form__input form__input--radio" type="radio" name="like">
+								<label for="spring" class="form__label form__label--radio">Весна</label>
+							</div>	
+							<div class="form__radio">
+								<input checked id="summer" class="form__input form__input--radio" type="radio" name="like">
+								<label for="summer" class="form__label form__label--radio">Лето</label>
+							</div>	
+							<div class="form__radio">
+								<input id="autemn" class="form__input form__input--radio" type="radio" name="like">
+								<label for="autemn" class="form__label form__label--radio">Осень</label>
+							</div>					
+						</div>
+						<div class="form__line">														
+							<input class="form__input" type="file" name="file" accept="image/png, image/jpeg" multiple>							
+						</div>
+						<div class="form__line">														
+							<textarea class="form__area" autocomplete="off" name="massage" cols="30" rows="10">Пожелания
+							</textarea>					
+						</div>
+						<div class="form__line">														
+							<select name="list">
+								<option value="">Пункт 1</option>
+								<option value="">Пункт 2</option>
+								<option selected value="">Пункт 3</option>
+								<option value="">Пункт 4</option>
+								<option value="Пункт 5">Пункт 5</option>
+							</select>				
+						</div>
+						<div class="form__line">														
+							<button class="form__button button">Сброс</button>				
+						</div>
+					</form>
+				</div>		
+				<section class="page__home home-block">
+					<div class="home-block__container">
+						<div class="home-block__body">
+							<div class="home-block__media">
+								<div class="home-block__image">
+									<img src="img/content/content.svg" alt="picture">
+								</div>
+							</div>
+							<div class="home-block__content">
+								<div class="home-block__title title">
+									<h2 class="title__small">Any questions?</h2>
+									<h1 class="title__main">Drop us a line</h1>
+								</div>
+								<div class="home-block__forms">
+									<form action="#" class="home-block__form form-block-home" method="get" enctype="multipart/form-data">
+										<div class="form-block-home__line">
+											<label for="first-name" class="form-block-home__label">First Name*</label>
+											<input id="first-name" class="form-block-home__input" type="text" name="first-name"  placeholder="Your first name" autocomplete="off" required >
+										</div>
+										<div class="form-block-home__line">
+											<label for="last-name" class="form-block-home__label">Last-name*</label>
+											<input id="last-name" class="form-block-home__input" type="text" name="last-name"  placeholder="Your last name" autocomplete="off" required >
+										</div>
+										<div class="form-block-home__line">
+											<label for="email-01" class="form-block-home__label">Email*</label>
+											<input id="email-01" class="form-block-home__input" type="email" name="email"  placeholder="Your working email" autocomplete="off" required >
+										</div>
+										<div class="form-block-home__line">
+											<label for="tell" class="form-block-home__label">Phone</label>
+											<input id="tell" class="form-block-home__input" type="tel" name="tell"  placeholder="Your phone number" autocomplete="off" required >
+										</div>
+										<div class="form-block-home__line form-block-home__line--area">
+											<label for="area" class="form-block-home__label">Message*</label>
+											<textarea id="area" class="form-block-home__area" name="massage" autocomplete="off" >Your message</textarea>
+										</div>
+										<div class="form-block-home__line form-action">
+											<div class="form-action__checkbox checkbox">
+												<input id="check" class="checkbox__input" type="checkbox" name="car">
+												<label for="check" class="checkbox__label"><span>I agree to receive communications from Createx Online School</span></label>
+											</div>
+											<div class="form-block-home__line form-block-home__line--button">														
+												<button class="form-block-home__button button"><span>Send message</span></button>				
+											</div>	
+										</div>											
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>							
+			</main>
+
+			<footer class="footer"></footer>
+
+		
+		</div>		
+	</body>
+</html>

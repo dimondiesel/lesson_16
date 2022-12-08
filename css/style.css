@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap ");
+
+body{
+	font-family: "lato";
+	color: #424551;
+	
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+/*=============================================*/
+
+[class*="__container"]{
+	max-width: 1275px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/*==============================*/
+.page {}
+.page__exemple{
+	padding: 20px;
+	background-color: rgba(27, 26, 26, 0.877);
+	
+}
+
+.form {
+	color: white;
+	font-size: 25px;
+
+}
+.form__line {
+	width: 500px;
+}
+.form__line:not(:last-child){
+	margin-bottom: 55px;
+	
+}
+.form__label {
+	display: inline-block;	
+	margin-bottom: 20px;
+	font-size: 25px;
+	
+}
+.form__input {
+	padding: 0px 20px;
+	height: 50px;
+	color: aqua;
+	font-family: "lato";
+	font-size: 25px;
+	
+}
+.form__input--radio,
+.form__input--chk{
+	width: auto;		
+	vertical-align: middle;
+		
+}
+.form__label--radio,
+.form__label--chk{
+	padding: 0px 0px 5px 5px
+}
+.form__input:focus {
+	outline: 1px solid red;
+}
+.form__input::placeholder {
+	color: brown;
+}
+.form__title span{
+	display: inline-block;
+	color: rgb(147, 20, 220);
+	font-size: 25px;
+	margin-bottom: 30px;	
+}
+
+.form__title h1{
+	display: inline-block;
+	
+	font-size: 35px;
+	margin-bottom: 30px;	
+}
+.form__area{
+	font-size: 30px;
+	width: 100%;
+	padding: 10px;
+	height: 150px;
+	resize: vertical;
+}
+.form__button{
+	font-size: 25px;
+}
+select{
+	font-size: 25px;
+	padding: 5px;
+	color: yellow;
+	background-color: red;
+}
+
+
+
+.checkbox {
+	position: relative;
+}
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox__input:focus+.checkbox__label::before{
+	background-color: rgb(38, 0, 255);
+}
+.checkbox__input:focus+.checkbox__label{
+	outline: 1px solid white;
+	border-radius: 5px;
+}
+.checkbox__input:checked+.checkbox__label::before{
+	background: #FF3F3A url('../img/icons/check.svg') center / 80% no-repeat;
+}
+.checkbox__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 10px;	
+}
+.checkbox__label::before{
+	content: "";
+	flex: 0 0 20px;
+	width: 20px;
+	height: 20px;
+	background-color: #FF3F3A;
+}
+.checkbox__text {
+	align-self: center;
+}
+
+/*====================================================*/
+.page__home {}
+
+.home-block {}
+.home-block__container {}
+.home-block__body {
+	display: flex;
+	justify-content: space-between;
+	gap: 105px;
+	align-items: center;
+
+}
+.home-block__media {}
+.home-block__image {
+
+	
+}
+img{
+	max-width: 100%;
+}
+.home-block__content {
+	flex: 0 0 56.626%;
+}
+.home-block__title {}
+.home-block__action {
+	display: flex;
+	justify-content: space-between;
+
+	
+}
+.home-block__text {
+	flex: 0 0  44.681%;
+}
+
+
+.form-block-home__line--button {
+	
+}
+
+.title {
+	color: #1E212C;
+	font-style: normal;
+	margin-bottom: 40px;
+}
+.title__small {	  
+   font-weight: 700;
+   line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.title__main {	
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+}
+
+.home-block__forms {
+	margin-bottom: 48px;
+	
+}
+.home-block__form {
+
+	font-style: normal;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0px;
+	line-height: 1.63;
+	
+}
+
+.form-block-home {
+	flex: 0 0 48.227%;
+
+}
+.form-block-home__line {
+	flex: 0 0 48.226%;
+
+	
+}
+.form-block-home__line--area {
+	
+	flex: 0 0 100%;
+	margin-bottom: 45px;
+
+	
+}
+.form-block-home__label {
+	display: block;
+	margin-bottom: 8px;
+
+	
+	
+}
+.form-block-home__input {
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	color: #9A9CA5;
+	height: 52px;
+	padding: 13px 16px;
+	margin-bottom: 24px;
+}
+.form-block-home__area {
+	color: #9A9CA5;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	width: 100%;
+	padding: 13px 16px;
+	height: 162px;
+
+}
+
+
+.form-block-home__line--button{
+	flex: 0 0 48.226%;
+}
+.button {
+	width: 100%;
+	
+	
+}
+.form-action{
+	flex: 0 0 100%;
+	display: flex;
+	gap: 50px;
+	
+}
+.form-action__checkbox{
+	
+}
